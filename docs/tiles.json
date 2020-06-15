@@ -1,5 +1,6 @@
 {
   "id": "prefs",
+  "name": "prefs",
   "tilejson": "2.0.0",
   "tiles": ["https://geolonia.github.io/prefecture-tiles/{z}/{x}/{y}.mvt"],
   "generator": "tippecanoe v1.34.3",
