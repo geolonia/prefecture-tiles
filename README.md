@@ -1,11 +1,5 @@
 # Prefecture Tiles
 
-https://kamataryo.github.io/nationalpark-mvt/
-
-## ライセンス
-
-# Prefecture Tiles
-
 ## Prerequisite
 
 - tippeacanoe https://github.com/mapbox/tippecanoe
@@ -16,7 +10,7 @@ https://kamataryo.github.io/nationalpark-mvt/
 ```shell
 $ git clone https://github.com/geolonia/prefecture-tiles.git
 $ cd prefecture-tiles
-$ tippecanoe -o ./data/prefectures.mbtiles -zg --drop-densest-as-needed --no-tile-compression ./data/prefectures.geojson -Z7 -z5
+$ tippecanoe -o ./data/prefectures.mbtiles -zg --drop-densest-as-needed --no-tile-compression ./data/prefectures.geojson -Z5 -z7
 $ mb-util --image_format=pbf ./data/prefectures.mbtiles ./docs
 $ find ./docs -name "*.pbf" -exec bash -c 'mv "$1" "${1%.pbf}".mvt' - '{}' \;
 ```
