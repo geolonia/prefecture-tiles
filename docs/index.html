@@ -21,7 +21,7 @@
     <script>
       var map = new window.geolonia.Map("#map");
       map.on("load", function () {
-        map.addSource("nps", {
+        map.addSource("prefs", {
           type: "vector",
           url: "https://geolonia.github.io/prefecture-tiles/tiles.json",
         });
@@ -31,8 +31,8 @@
           source: "prefs",
           "source-layer": "prefs",
           paint: {
-            "fill-color": "black",
-            "fill-opacity": 0.4,
+            "fill-color": "#ff0000",
+            // "fill-opacity": 0.4,
           },
         });
       });
