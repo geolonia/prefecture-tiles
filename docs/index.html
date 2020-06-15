@@ -25,13 +25,11 @@
           type: "vector",
           url: "https://geolonia.github.io/prefecture-tiles/tiles.json",
         });
-
         map.addLayer({
           id: "都道府県",
           type: "fill",
           source: "prefs",
-          filter: ["all", ["==", ["get", "pref"], 8]],
-          "source-layer": "prefs",
+          "source-layer": "prefectures",
           paint: {
             "fill-color": "red",
             "fill-opacity": 0.4,
