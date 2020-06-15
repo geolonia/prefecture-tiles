@@ -3,6 +3,7 @@
   "name": "prefs",
   "tilejson": "2.0.0",
   "tiles": ["https://geolonia.github.io/prefecture-tiles/{z}/{x}/{y}.mvt"],
+  "attribution": "aaa",
   "generator": "tippecanoe v1.34.3",
   "format": "pbf",
   "generator_options": "tippecanoe -o ./data/prefectures.mbtiles -zg --drop-densest-as-needed --no-tile-compression ./data/prefectures.geojson",

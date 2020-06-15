@@ -23,16 +23,19 @@
       map.on("load", function () {
         map.addSource("prefs", {
           type: "vector",
-          url: "https://geolonia.github.io/prefecture-tiles/tiles.json",
+          url: "http://127.0.0.1:8080/docs/tiles.json",
+          // url: "https://geolonia.github.io/prefecture-tiles/tiles.json",
         });
+
         map.addLayer({
-          id: "prefs",
+          id: "都道府県",
           type: "fill",
           source: "prefs",
+          filter: ["all", ["==", ["get", "pref"], 8]],
           "source-layer": "prefs",
           paint: {
-            "fill-color": "#ff0000",
-            // "fill-opacity": 0.4,
+            "fill-color": "red",
+            "fill-opacity": 0.4,
           },
         });
       });
